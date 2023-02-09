@@ -1,0 +1,9 @@
+@import '../../styles/shared.scss';
+
+.authContainer {
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 450px) {
+    width: 100%;
+  }
+}

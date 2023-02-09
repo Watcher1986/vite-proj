@@ -1,0 +1,101 @@
+@import '../../styles/shared.scss';
+
+.navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    background-color: $white-color;
+
+    & .inputWrapper {
+        margin-left: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        & img {
+            margin-right: 10px;
+        }
+
+        & input {
+            height: 35px;
+            width: 900px;
+            font-family: inherit;
+            font-size: 16px;
+            font-weight: 400;
+            color: $grey-color;
+            border: none;
+            border-radius: 5px;
+        }
+    }
+
+    &__paramsWrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 30px;
+
+        & button:first-child {
+            @include flexbox-center();
+            height: 55px;
+            width: 55px;
+            margin-right: 15px;
+            background-color: transparent;
+            outline: none;
+            border: none;
+            transition: all 1000ms $transition-function;
+
+            &:hover,
+            &:focus {
+                transform: rotate(180deg);
+            }
+
+            & img {
+                height: 25px;
+                width: 25px;
+            }
+        }
+
+        & button:last-child {
+            @include flexbox-center();
+            height: 55px;
+            background-color: transparent;
+            outline: none;
+            border: none;
+            font-family: inherit;
+            font-size: 16px;
+            font-weight: 400;
+            color: $grey-color;
+            transition: all 300ms $transition-function;
+
+            &:hover,
+            &:focus {
+                transform: scale(1.05);
+            }
+
+            & img {
+                height: 25px;
+                width: 25px;
+                margin-left: 5px;
+            }
+        }
+
+        & img {
+            height: 40px;
+            width: 40px;
+        }
+
+        & div p {
+            margin-right: 30px;
+            margin-left: 10px;
+            font-family: inherit;
+            font-weight: 400;
+            font-size: 16px;
+            color: #333;
+
+            &:last-child {
+                color: $grey-color;
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+@import '../../styles/shared.scss';
+
+.pageHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  width: 100vw;
+  background-color: $sidebar-color;
+  @media (max-width: 450px) {
+    height: 100px;
+  }
+}
+
+.headerLogo {
+  height: 40px;
+  padding-left: 20px;
+  @media (min-width: 768px) {
+    padding-left: 70px;
+  }
+}
+
+.headerLoginBtn {
+  padding: 10px 60px;
+  margin-right: 70px;
+  border: none;
+  border-radius: 4px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: $white-color;
+  background-color: $accent-color;
+  transition: all $transition-duration $transition-function;
+  &:hover,
+  &:focus-visible {
+    background-color: $dark-accent-color;
+  }
+  &:disabled {
+    cursor: not-allowed;
+  }
+  @media (max-width: 450px) {
+    padding: 10px 30px;
+    margin-right: 20px;
+  }
+}

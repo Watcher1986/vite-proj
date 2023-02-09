@@ -1,0 +1,137 @@
+@import '../../styles/shared.scss';
+
+.casWrapper {
+  padding: 20px;
+
+  & h3 {
+    margin-bottom: 15px;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 25px;
+    color: $sidebar-color;
+  }
+}
+
+.casItemsWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+
+  & .casItem {
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid $grey-color;
+    background-color: $white-color;
+  }
+}
+
+.headingWrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+
+  & p {
+    margin-top: 5px;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 24px;
+    color: $sidebar-color;
+  }
+}
+
+.textWrapper {
+  margin-bottom: 15px;
+
+  & .description {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 14px;
+    color: $grey-color;
+  }
+}
+
+.casBtn {
+  @include flexbox-center();
+  height: 35px;
+  width: 130px;
+  border-radius: 3px;
+  border: 1px solid $accent-color;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  color: $accent-color;
+  background-color: $white-color;
+  transition: transform $transition-duration $transition-function;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.01);
+    & svg {
+      transform: translateX(70%);
+    }
+  }
+
+  & svg {
+    margin-left: 10px;
+    margin-bottom: 2px;
+    transition: transform $transition-duration $transition-function;
+  }
+}
+
+.credsWrapper {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+  align-items: center;
+}
+
+.btnsWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.copyBtn {
+  background-color: transparent;
+  border: none;
+  height: 18px;
+  width: 18px;
+
+  & svg {
+    transition: transform $transition-duration $transition-function;
+  }
+
+  &:hover,
+  &:focus {
+    & svg {
+      transform: scale(1.09);
+    }
+  }
+}
+
+.detailsBtn {
+  @include flexbox-center();
+  height: 35px;
+  width: 130px;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  color: $accent-color;
+  border: none;
+  background-color: $white-color;
+  transition: transform $transition-duration $transition-function;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.01);
+    & svg {
+      transform: translateY(30%);
+    }
+  }
+
+  & svg {
+    margin-left: 10px;
+    margin-bottom: 2px;
+    transition: transform $transition-duration $transition-function;
+  }
+}

@@ -1,0 +1,144 @@
+@import '../../styles/shared.scss';
+
+.cabContainer {
+  padding: 20px;
+
+  & h3 {
+    margin-bottom: 15px;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 25px;
+    color: $sidebar-color;
+  }
+}
+
+.cabWrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+
+  & .sectionWrapper {
+    height: 200px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid $grey-color;
+    background-color: $white-color;
+  }
+}
+
+.headingWrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+
+  & span {
+    margin-left: 10px;
+    margin-top: 5px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 14px;
+    color: $grey-color;
+  }
+}
+
+.textWrapper {
+  margin-bottom: 25px;
+
+  & .heading {
+    margin-bottom: 15px;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 20px;
+    color: $sidebar-color;
+  }
+
+  & .description {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 14px;
+    color: $grey-color;
+  }
+}
+
+.sectionBtn {
+  @include flexbox-center();
+  height: 35px;
+  width: 130px;
+  border-radius: 3px;
+  border: 1px solid $accent-color;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  color: $accent-color;
+  background-color: $white-color;
+  transition: transform $transition-duration $transition-function;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.01);
+    & svg {
+      transform: translateX(90%);
+    }
+  }
+
+  & svg {
+    margin-left: 10px;
+    transition: transform $transition-duration $transition-function;
+  }
+}
+
+.widgetSection {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.articleWrapper {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.headerWrapper,
+.newsHeaderWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 15px;
+
+  & h3 {
+    margin: 0;
+  }
+
+  & a {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 16px;
+    color: $accent-color;
+    margin-top: 5px;
+    margin-left: 15px;
+    transition: transform $transition-duration $transition-function;
+
+    &:hover,
+    &:focus {
+      transform: translateX(10%);
+    }
+  }
+}
+
+.widgets {
+  height: 220px;
+  margin-bottom: 15px;
+  border: 1px solid $grey-color;
+  border-radius: 5px;
+  background-color: $white-color;
+}
+
+.article {
+  height: 220px;
+  border: 1px solid $grey-color;
+  border-radius: 5px;
+  background-color: $white-color;
+}
