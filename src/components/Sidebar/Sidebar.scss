@@ -1,0 +1,48 @@
+@import '../../styles/shared.scss';
+
+.sidebar {
+  height: 100%;
+  width: 17%;
+  float: left;
+  background-color: $sidebar-color;
+
+  & .logoWrapper {
+    padding: 15px 80px 15px 22px;
+    border-bottom: 1px solid $grey-color;
+  }
+
+  & .navLinks {
+    padding: 15px 0 15px 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    border-bottom: 1px solid $grey-color;
+
+    & p {
+      margin-bottom: 15px;
+      color: #647082;
+      font-family: inherit;
+      font-weight: 700;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+
+    & a {
+      color: $sidebar-text-color;
+      font-family: inherit;
+      font-weight: 400;
+      font-size: 16px;
+      transition: all $transition-duration $transition-function;
+
+      &:hover,
+      &:focus {
+        color: $grey-color;
+        transform: scale(1.01);
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 25px;
+      }
+    }
+  }
+}

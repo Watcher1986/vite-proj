@@ -1,0 +1,29 @@
+@import '../../styles/shared.scss';
+
+.pageFooter {
+  position: absolute;
+  bottom: 0;
+  @include flexbox-center();
+  flex-direction: column;
+  height: 130px;
+  width: 100vw;
+  background-color: $sidebar-color;
+}
+
+.footerLogo {
+  margin-bottom: 25px;
+  height: 40px;
+}
+
+.footerText {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: $white-color;
+  @media (max-width: 450px) {
+    text-align: center;
+    padding: 0 20px;
+  }
+}

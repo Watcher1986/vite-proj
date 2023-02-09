@@ -1,0 +1,52 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "provider": "SA Gaming",
+      "name": "SA Gaming maintenance",
+      "time": "14 February 2022 10:00 - 14 February 2022 12:30 GMT+8",
+      "impact": "high",
+      "info": "Games may be not available at this time"
+    },
+    {
+      "id": "2",
+      "provider": "TVBET",
+      "name": "TVBET maintenance",
+      "time": "20 October 2021 06:00 - 20 October 2021 12:00 GMT +8",
+      "impact": "middle",
+      "info": "Games will be unavailable for 5 minutes"
+    },
+    {
+      "id": "3",
+      "provider": "SA Gaming",
+      "name": "SA Gaming maintenance",
+      "time": "14 February 2022 10:00 - 14 February 2022 12:30 GMT+8",
+      "impact": "",
+      "info": "Game Client, Back Office, and Web service API will be inaccessible."
+    },
+    {
+      "id": "4",
+      "provider": "Green Jade",
+      "name": "Green Jade maintenance",
+      "time": "20 October 2021 06:00 - 20 October 2021 12:00 GMT +8",
+      "impact": "high",
+      "info": "Games may be not available at this time"
+    },
+    {
+      "id": "5",
+      "provider": "SA Gaming",
+      "name": "Golden Race maintenance",
+      "time": "14 February 2022 10:00 - 14 February 2022 12:30 GMT+8",
+      "impact": "high",
+      "info": "Game Client, Back Office, and Web service API will be inaccessible."
+    },
+    {
+      "id": "6",
+      "provider": "Green Jade",
+      "name": "Green Jade maintenance",
+      "time": "20 October 2021 06:00 - 20 October 2021 12:00 GMT +8",
+      "impact": "",
+      "info": "Games will be unavailable for 5 minutes"
+    }
+  ]
+}
